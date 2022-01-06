@@ -1,2 +1,3 @@
-# FNF-X-DDLC
-The ready to go source code of FNF X DDLC!
+![FNF X DDLC!](art/FNF-X-DDLC!.gif)
+# FNF X DDLC!
+
