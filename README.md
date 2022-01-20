@@ -1,3 +1,3 @@
 ![FNF X DDLC!](art/FNF-X-DDLC!.gif)
 # FNF X DDLC
-+1
+## Hope you didn't forget!
