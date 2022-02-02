@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sayori.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481, b-but not for you, dummy! B-B-B-Baka! -->
+	<!-- (Youtube) -->
+	<SubTexture name="Natsuki Dance0000" x="4" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0001" x="281" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0002" x="558" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0003" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0004" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0005" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0006" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0007" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0008" x="835" y="4" width="277" height="777"/>
+	<SubTexture name="Natsuki Dance0009" x="835" y="4" width="277" height="777"/>
+
+	<SubTexture name="Natsuki Sing Down0000" x="1112" y="4" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0001" x="1552" y="4" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0002" x="4" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0003" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0004" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0005" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0006" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0007" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0008" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0009" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0010" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0011" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+	<SubTexture name="Natsuki Sing Down0012" x="444" y="781" width="440" height="771" frameX="30" frameY="-7" frameWidth="440" frameHeight="771"/>
+
+	<SubTexture name="Natsuki Sing Left0000" x="884" y="781" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0001" x="1276" y="781" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0002" x="4" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0003" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0004" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0005" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0006" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0007" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0008" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0009" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0010" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0011" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+	<SubTexture name="Natsuki Sing Left0012" x="396" y="1552" width="392" height="765" frameX="35" frameY="-13" frameWidth="392" frameHeight="765"/>
+
+	<SubTexture name="Natsuki Sing Right0000" x="788" y="1552" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0001" x="1157" y="1552" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0002" x="1526" y="1552" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0003" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0004" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0005" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0006" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0007" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0008" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+	<SubTexture name="Natsuki Sing Right0009" x="4" y="2328" width="369" height="776" frameX="-45" frameY="-1" frameWidth="369" frameHeight="776"/>
+
+	<SubTexture name="Natsuki Sing Up0000" x="373" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0001" x="724" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0002" x="1075" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0003" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0004" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0005" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0006" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0007" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0008" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+	<SubTexture name="Natsuki Sing Up0009" x="1426" y="2328" width="351" height="773" frameX="0" frameY="-3" frameWidth="351" frameHeight="773"/>
+
+	<SubTexture name="PLAY WITH ME0000" x="4" y="3104" width="336" height="680"/>
+	<SubTexture name="PLAY WITH ME0001" x="4" y="3104" width="336" height="680"/>
+	<SubTexture name="PLAY WITH ME0002" x="4" y="3104" width="336" height="680"/>
+</TextureAtlas>
