@@ -1,6 +1,6 @@
 TEAM JJGAMER Presents:
 # FNF X DDLC!
-![FNF X DDLC!](art/FNF-X-DDLC!.gif)
+![FNF X DDLC!](art/iconOG.png)
 
 Hope you didn't forget!
 ---
