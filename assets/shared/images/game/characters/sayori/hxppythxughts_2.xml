@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sayori.png">
+	<!-- Crexted with Xdxbe Xnimxte versixn 2x.x.x.174xx -->
+	<!-- (Youtube) -->
+	<SubTexture name="Sayori Swing0000" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0001" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0002" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0003" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0004" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0005" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0006" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0007" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0008" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0009" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0010" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0011" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0012" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0013" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0014" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0015" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0016" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0017" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0018" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0019" x="0" y="0" width="381" height="1048" frameX="-2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0020" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0021" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0022" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0023" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0024" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0025" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0026" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0027" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0028" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0029" x="0" y="0" width="381" height="1048" frameX="0" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0030" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0031" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0032" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0033" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0034" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0035" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0036" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0037" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0038" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+	<SubTexture name="Sayori Swing0039" x="0" y="0" width="381" height="1048" frameX="2" frameY="0" frameWidth="381" frameHeight="1048"/>
+</TextureAtlas>

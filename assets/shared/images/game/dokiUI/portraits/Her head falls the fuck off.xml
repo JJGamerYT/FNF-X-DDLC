@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="textBox.png">
+	<!-- Created by bashing my face into my keyboard and hoping for the best -->
+	<!-- (youtube) -->
+	<SubTexture name="Her Head Falls The Fuck Off0000" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0001" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0002" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0003" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0004" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0005" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0006" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0007" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0008" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0009" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0010" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0011" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0012" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0013" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0014" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0015" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0016" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0017" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0018" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0019" x="4" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0020" x="713" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0021" x="713" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0022" x="713" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0023" x="1422" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0024" x="1422" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0025" x="2131" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0026" x="2131" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0027" x="2840" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0028" x="2840" y="4" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0029" x="4" y="1032" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0030" x="713" y="1032" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0031" x="1422" y="1032" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0032" x="2131" y="1032" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0033" x="2840" y="1032" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0034" x="4" y="2060" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0035" x="713" y="2060" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0036" x="1422" y="2060" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0037" x="2131" y="2060" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0038" x="2840" y="2060" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0039" x="4" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0040" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0041" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0042" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0043" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0044" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0045" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0046" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0047" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0048" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0049" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0050" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0051" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0052" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0053" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0054" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0055" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0056" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0057" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0058" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0059" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0060" x="713" y="3088" width="709" height="1028"/>
+	<SubTexture name="Her Head Falls The Fuck Off0061" x="713" y="3088" width="709" height="1028"/>
+</TextureAtlas>

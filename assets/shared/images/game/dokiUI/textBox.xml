@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="textBox.png">
+	<!-- Created by bashing my face into my keyboard and hoping for the best -->
+	<!-- (youtube) -->
+	<SubTexture name="DDLC Box Open 0000" x="1109" y="648" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0001" x="1109" y="648" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0002" x="0" y="648" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0003" x="0" y="648" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0004" x="1109" y="0" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0005" x="1109" y="0" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0006" x="0" y="0" width="1109" height="648"/>
+	<SubTexture name="DDLC Box Open 0007" x="0" y="0" width="1109" height="648"/>
+</TextureAtlas>

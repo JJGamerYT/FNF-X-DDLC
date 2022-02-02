@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sayori.png">
+	<!-- Created with a little bit of magic! -->
+	<!-- UNUSED FRAME DATA -->
+	<!-- SubTexture name="Sayori Yay!0000" x="904" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795" -->
+	<!-- (Youtube) -->
+	<SubTexture name="Sayori Dance0000" x="4" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0001" x="435" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0002" x="866" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0003" x="1297" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0004" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0005" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0006" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0007" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0008" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0009" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0010" x="1728" y="4" width="431" height="799"/>
+	<SubTexture name="Sayori Dance0011" x="1728" y="4" width="431" height="799"/>
+
+	<SubTexture name="Sayori Sing Down0000" x="2159" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0001" x="2565" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0002" x="2971" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0003" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0004" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0005" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0006" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0007" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0008" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0009" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0010" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0011" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0012" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0013" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+	<SubTexture name="Sayori Sing Down0014" x="3377" y="4" width="406" height="785" frameX="0" frameY="-13" frameWidth="406" frameHeight="785"/>
+
+	<SubTexture name="Sayori Sing Left0000" x="4" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0001" x="495" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0002" x="986" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0003" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0004" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0005" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0006" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0007" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0008" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0009" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0010" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0011" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0012" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0013" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+	<SubTexture name="Sayori Sing Left0014" x="1477" y="803" width="491" height="790" frameX="75" frameY="-10" frameWidth="491" frameHeight="790"/>
+
+	<SubTexture name="Sayori Sing Right0000" x="1968" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0001" x="2385" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0002" x="2802" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0003" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0004" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0005" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0006" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0007" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0008" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0009" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0010" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0011" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0012" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0013" x="3219" y="803" width="417" height="799"/>
+	<SubTexture name="Sayori Sing Right0014" x="3219" y="803" width="417" height="799"/>
+
+	<SubTexture name="Sayori Sing Up0000" x="3636" y="803" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0001" x="4" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0002" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0003" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0004" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0005" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0006" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0007" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0008" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0009" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0010" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0011" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0012" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0013" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+	<SubTexture name="Sayori Sing Up0014" x="454" y="1612" width="450" height="809" frameX="46" frameY="8" frameWidth="450" frameHeight="809"/>
+
+	<SubTexture name="Sayori Yay!0000" x="1427" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0001" x="1950" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0002" x="2473" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0003" x="2996" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0004" x="3519" y="1612" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0005" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0006" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0007" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0008" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0009" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0010" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0011" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+	<SubTexture name="Sayori Yay!0012" x="4" y="2421" width="523" height="795" frameX="80" frameY="0" frameWidth="523" frameHeight="795"/>
+</TextureAtlas>
