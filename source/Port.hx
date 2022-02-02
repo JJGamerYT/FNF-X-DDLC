@@ -24,7 +24,6 @@ class Port extends FlxSprite
 					animation.add('D', [3], 0, false);
 					animation.add('E', [4], 0, false);
 					animation.add('F', [5], 0, false);
-					animation.add('G', [6], 0, false);
 					animation.play("A");
 				case 'gf':
 					loadGraphic(Paths.image('game/dokiUI/portraits/GFPort'), true, 323, 295);
@@ -79,7 +78,6 @@ class Port extends FlxSprite
 					animation.add('H', [7], 0, false);
 					animation.add('I', [8], 0, false);
 					animation.add('J', [9], 0, false);
-					animation.add('K', [10], 0, false);
 					animation.play("A");
 				case 'natsuki':
 					loadGraphic(Paths.image('game/dokiUI/portraits/NPort'), true, 263, 359);
@@ -95,6 +93,15 @@ class Port extends FlxSprite
 					animation.add('J', [9], 0, false);
 					animation.add('K', [10], 0, false);
 					animation.play("A");
+				case 'names':
+					loadGraphic(Paths.image('game/dokiUI/textBoxNames'), true, 1109, 648);
+					animation.add('bf', [0], 0, false);
+					animation.add('m', [1], 0, false);
+					animation.add('y', [2], 0, false);
+					animation.add('gf', [3], 0, false);
+					animation.add('s', [4], 0, false);
+					animation.add('n', [5], 0, false);
+					animation.play("bf");
 			}
 
 		//antialiasing = true;

@@ -17,11 +17,10 @@ class MenuCharacter extends FlxSprite
 		frames = tex;
 
 		animation.addByPrefix('bf', "BF idle dance white", 24);
-		animation.addByPrefix('bf-act2', "BF idle dance act 2", 24);
 		animation.addByPrefix('bfConfirm', 'BF HEY!!', 24, false);
 		animation.addByPrefix('gf', "GF Dancing Beat WHITE", 24);
-		animation.addByPrefix('speakers', "speakers Menu", 24);
 		animation.addByPrefix('dokilogo', "Pen Mic", 24);
+		// Parent Christmas Idle
 
 		animation.play(character);
 		updateHitbox();

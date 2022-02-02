@@ -67,7 +67,10 @@ class Paths
 
 	inline static public function json(key:String, ?library:String)
 	{
-		return getPath('data/$key.json', TEXT, library);
+		//if (act2)
+			return getPath('data/$key.json', TEXT, library);
+		//else
+			//return getPath('data/1/$key.json', TEXT, library);
 	}
 
 	static public function sound(key:String, ?library:String)
@@ -90,20 +93,20 @@ class Paths
 			return 'songs:assets/shared/${song.toLowerCase()}/Voices.$SOUND_EXT';
 		}
 
-	inline static public function voices(song:String, act2:Bool = false)
+	inline static public function voices(song:String)
 	{
-		if (act2)
-			return 'songs:assets/songs/2/${song.toLowerCase()}/Voices.$SOUND_EXT';
-		else
-			return 'songs:assets/songs/1/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		//if (act2)
+			return 'songs:assets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		//else
+			//return 'songs:assets/songs/1/${song.toLowerCase()}/Voices.$SOUND_EXT';
 	}
 
-	inline static public function inst(song:String, act2:Bool = false)
+	inline static public function inst(song:String)
 	{
-		if (act2)
-			return 'songs:assets/songs/2/${song.toLowerCase()}/Inst.$SOUND_EXT';
-		else
-			return 'songs:assets/songs/1/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		//if (act2)
+			return 'songs:assets/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		//else
+			//return 'songs:assets/songs/1/${song.toLowerCase()}/Inst.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String)
@@ -111,20 +114,15 @@ class Paths
 		return getPath('images/$key.png', IMAGE, library);
 	}
 
-	inline static public function emImage(key:String, ?library:String)
+	inline static public function emBytes(key:String, ?library:String)
 		{
-			return 'assets/embeded/images/$key.png';
-		}
-	
-	inline static public function emText(key:String, ?library:String)
-		{
-			return getPath('images/embeded/data/$key.txt', TEXT, library);
+			return getPath('assets/embeded/bytes/$key.txt', IMAGE, library);
 		}
 
 	inline static public function font(key:String)
-		{
-			return 'assets/embeded/fonts/$key';
-		}
+	{
+		return 'assets/embeded/fonts/$key';
+	}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String)
 	{

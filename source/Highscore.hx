@@ -11,9 +11,15 @@ class Highscore
 	#end
 
 
-	public static function saveScore(song:String, score:Int = 0, ?diff:Int = 0, ?act2:Bool = false):Void
+	public static function saveScore(song:String, score:Int = 0, ?diff:Int = 0):Void
 	{
-		var daSong:String = formatSong(song, diff, act2);
+		var daSong:String = formatSong(song, diff);
+
+
+		#if !switch
+		NGio.postScore(score, song);
+		#end
+
 
 		if (songScores.exists(daSong))
 		{
@@ -24,9 +30,15 @@ class Highscore
 			setScore(daSong, score);
 	}
 
-	public static function saveWeekScore(week:Int = 1, score:Int = 0, ?diff:Int = 0, ?act2:Bool = false):Void
+	public static function saveWeekScore(week:Int = 1, score:Int = 0, ?diff:Int = 0):Void
 	{
-		var daWeek:String = formatSong('week' + week, diff, act2);
+
+		#if !switch
+		NGio.postScore(score, "Week " + week);
+		#end
+
+
+		var daWeek:String = formatSong('week' + week, diff);
 
 		if (songScores.exists(daWeek))
 		{
@@ -48,7 +60,7 @@ class Highscore
 		FlxG.save.flush();
 	}
 
-	public static function formatSong(song:String, diff:Int, act2:Bool):String
+	public static function formatSong(song:String, diff:Int):String
 	{
 		var daSong:String = song;
 
@@ -57,28 +69,23 @@ class Highscore
 		else if (diff == 2)
 			daSong += '-hard';
 
-		if (act2)
-			daSong += '-2';
-		else
-			daSong += '-1';
-
 		return daSong;
 	}
 
-	public static function getScore(song:String, diff:Int, act2:Bool):Int
+	public static function getScore(song:String, diff:Int):Int
 	{
-		if (!songScores.exists(formatSong(song, diff, act2)))
-			setScore(formatSong(song, diff, act2), 0);
+		if (!songScores.exists(formatSong(song, diff)))
+			setScore(formatSong(song, diff), 0);
 
-		return songScores.get(formatSong(song, diff, act2));
+		return songScores.get(formatSong(song, diff));
 	}
 
-	public static function getWeekScore(week:Int, diff:Int, act2:Bool):Int
+	public static function getWeekScore(week:Int, diff:Int):Int
 	{
-		if (!songScores.exists(formatSong('week' + week, diff, act2)))
-			setScore(formatSong('week' + week, diff, act2), 0);
+		if (!songScores.exists(formatSong('week' + week, diff)))
+			setScore(formatSong('week' + week, diff), 0);
 
-		return songScores.get(formatSong('week' + week, diff, act2));
+		return songScores.get(formatSong('week' + week, diff));
 	}
 
 	public static function load():Void

@@ -1,7 +1,6 @@
 package;
 
-//import sys.io.File;
-import flixel.group.FlxGroup;
+import sys.io.File;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -21,7 +20,6 @@ import openfl.utils.Assets;
 import lime.utils.Assets;
 import flixel.addons.effects.chainable.FlxGlitchEffect;
 import flixel.addons.effects.chainable.FlxEffectSprite;
-import flixel.system.FlxSound;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
@@ -33,7 +31,7 @@ using StringTools;
 class DialogueBox extends FlxSpriteGroup
 {
 	var box:FlxSprite;
-	var boxName:FlxSprite;
+	var boxName:Port;
 
 	var fileString:String = 'ha ha gf funkin dies.mp4';
 
@@ -45,10 +43,6 @@ class DialogueBox extends FlxSpriteGroup
 
 	var dialogue:Alphabet;
 	public var dialogueList:Array<String> = [];
-	public var skipDialogueList:Array<String> = [];
-
-	var skipCheck:Bool = false;
-	var inSkipDialogue:Bool = false;
 
 	var dokiDialog:Bool = false;
 
@@ -65,12 +59,12 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var finishThing:Void->Void;
 
-	var bg:FlxSprite;
-	var end:FlxSprite;
-	var vignette:FlxSprite;
+	var portraitLeft:FlxSprite;
+	var portraitRight:FlxSprite;
 
-	var musicPlaying:String = '';
-	var musicTime:Float;
+	var bg:FlxSprite;
+	var glitchBG:FlxSprite;
+	var end:FlxSprite;
 
 	var bgFade:FlxSprite;
 
@@ -78,11 +72,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var canSkip:Bool = true;
 	var skipFastAndEatAss:Bool = false;
-	var textSpeed:Float = 0.03;
 	var paused:Bool = false;
-
-	private var sounds:FlxSound;
-	private var music:FlxSound;
 
 	//var jjPortUp:Bool = false;
 	//var jjPortA:FlxSprite;
@@ -124,10 +114,7 @@ class DialogueBox extends FlxSpriteGroup
 	var gfStandIn:FlxSprite;
 	var bfStandIn:FlxSprite;
 
-	var layerBG:FlxSpriteGroup;
-	var layerPorts:FlxSpriteGroup;
-
-	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>, ?bg:String)
+	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
 		super();
 
@@ -142,14 +129,11 @@ class DialogueBox extends FlxSpriteGroup
 		flip = new FlxUICheckBox(10, 50, null, null, "Flip x", 100);
 		flip.name = 'flip';
 
-		if (PlayState.SONG.song.toLowerCase() == 'goodbye')
-			skipDialogueList = CoolUtil.coolTextFile(Paths.txt('goodbye/skip'));
-
 		bgTrans = new FlxSprite(-100, -50).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
 
 		if (PlayState.SONG.song.toLowerCase() == 'spiders')
 			{
-				bgTrans.alpha = 0;
+				bgTrans.alpha = 1;
 			}
 		else
 			{
@@ -177,9 +161,20 @@ class DialogueBox extends FlxSpriteGroup
 			//}
 		//else
 			//{
+				bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
+				bgFade.scrollFactor.set();
+				bgFade.alpha = 0;
+				add(bgFade);
+
+				new FlxTimer().start(0.83, function(tmr:FlxTimer)
+					{
+						bgFade.alpha += (1 / 5) * 0.7;
+						if (bgFade.alpha > 0.7)
+							bgFade.alpha = 0.7;
+					}, 5);
 			//}
 
-		var box:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('game/textBox'));
+		var box:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('game/dokiUI/textBox'));
 		box.screenCenter(X);
 		box.y = 480;
 		
@@ -238,17 +233,55 @@ class DialogueBox extends FlxSpriteGroup
 		//cutsceneImage = new FlxSprite(0, 0);
 		//cutsceneImage.visible = false;
 		//add(cutsceneImage);	
+		
+		portraitLeft = new FlxSprite(-20, 40);
+		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
+		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
+		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+		portraitLeft.updateHitbox();
+		portraitLeft.scrollFactor.set();
+		add(portraitLeft);
+		portraitLeft.visible = false;
+
+		portraitRight = new FlxSprite(0, 40);
+		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
+		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+		portraitRight.updateHitbox();
+		portraitRight.scrollFactor.set();
+		add(portraitRight);
+		portraitRight.visible = false;
+
+		//jjPortA = new FlxSprite(800, 85);
+		//jjPortA.frames = Paths.getSparrowAtlas('game/dokiUI/portraits/JJGPort');
+		//jjPortA.animation.addByPrefix('showA', 'Face A', 24, false);
+		//jjPortA.animation.addByIndices('A', 'Face A', [7], "", 24);
+		//add(jjPortA);
+		//jjPortA.visible = false;
+
+		//jjPortB = new FlxSprite(800, 85);
+		//jjPortB.frames = Paths.getSparrowAtlas('game/dokiUI/portraits/JJGPort');
+		//jjPortB.animation.addByPrefix('showB', 'Face B', 24, false);
+		//jjPortB.animation.addByIndices('B', 'Face B', [7], "", 24);
+		//add(jjPortB);
+		//jjPortB.visible = false;
+
+		//jjPortC = new FlxSprite(800, 85);
+		//jjPortC.frames = Paths.getSparrowAtlas('game/dokiUI/portraits/JJGPort');
+		//jjPortC.animation.addByPrefix('showC', 'Face C', 24, false);
+		//jjPortC.animation.addByIndices('C', 'Face C', [7], "", 24);
+		//add(jjPortC);
+		//jjPortC.visible = false;
 
 		//BG AND MUSIC
-		this.bg = new FlxSprite(0, 0);
-		this.bg.loadGraphic(Paths.image('game/dokiUI/bg/' + bg), false);
-		/*if (PlayState.SONG.song.toLowerCase() == 'cool-test' || PlayState.SONG.song.toLowerCase() == 'spiders')
+		bg = new FlxSprite(0, 0);
+		if (PlayState.SONG.song.toLowerCase() == 'cool-test' || PlayState.SONG.song.toLowerCase() == 'spiders')
 			{
-				this.bg.loadGraphic(Paths.image('game/dokiUI/bg/class'), false);
+				bg.loadGraphic(Paths.image('game/dokiUI/bg/class'), false);
 			}
 		else
 			{
-				this.bg.loadGraphic(Paths.image('game/dokiUI/bg/club'), false);
+				bg.loadGraphic(Paths.image('game/dokiUI/bg/club'), false);
 				if (PlayState.SONG.song.toLowerCase() == 'bottles')
 					{
 						FlxG.sound.playMusic(Paths.music('dialogue/ohio'), 0.7);
@@ -270,11 +303,21 @@ class DialogueBox extends FlxSpriteGroup
 								FlxG.sound.music.loopTime = 9938;
 							}
 					}
-			}*/
-		
-		layerBG = new FlxSpriteGroup();
-		layerBG.add(this.bg);
-		add(layerBG);
+			}
+			
+		add(bg);
+
+		glitchBG = new FlxSprite(0, 0);
+		glitchBG.loadGraphic(Paths.image('game/dokiUI/bg/clubG'), true, 1280, 720);
+		glitchBG.animation.add('glitch', [0, 1], 24, true);
+		glitchBG.alpha = 0;
+		add(glitchBG);
+
+
+		//if (PlayState.SONG.song.toLowerCase() == 'goodbye')
+			//{
+				//loadGraphic(Paths.image('game/dokiUI/bg/space'), false);
+			//}
 
 		//GF PORTS
 		gfPort = new Port('gf');
@@ -293,7 +336,7 @@ class DialogueBox extends FlxSpriteGroup
 		//MONIKA PORTS
 		mPort = new Port('monika');
 		mPort.x = 100;
-		mPort.y = 70;
+		mPort.y = 80;
 		mPort.alpha = 0;
 		add(mPort);
 
@@ -320,7 +363,7 @@ class DialogueBox extends FlxSpriteGroup
 
 		bfStandIn = new FlxSprite(85, 216);
 		bfStandIn.frames = Paths.getSparrowAtlas('game/dokiUI/portraits/Local boyfriend watches his girlfriends head fall off');
-		bfStandIn.animation.addByPrefix('oh damn', 'Local boyfriend watches his girlfriends head fall off', 12, true);
+		bfStandIn.animation.addByPrefix('oh damn', 'Local boyfriend watches his girlfriends head fall off', 24, true);
 		bfStandIn.animation.play("oh damn");
 		bfStandIn.visible = false;
 		bfStandIn.flipX = true;
@@ -328,55 +371,36 @@ class DialogueBox extends FlxSpriteGroup
 
 		gfStandIn = new FlxSprite(657, 114);
 		gfStandIn.frames = Paths.getSparrowAtlas('game/dokiUI/portraits/Her head falls the fuck off');
-		gfStandIn.animation.addByPrefix('oh damn', 'Her Head Falls The Fuck Off', 12, true);
+		gfStandIn.animation.addByPrefix('oh damn', 'Her Head Falls The Fuck Off', 24, true);
 		gfStandIn.animation.play("oh damn");
 		gfStandIn.visible = false;
 		add(gfStandIn);
-
-		layerPorts = new FlxSpriteGroup();
-
-		layerPorts.add(gfPort);
-		layerPorts.add(bfPort);
-		layerPorts.add(mPort);
-		layerPorts.add(sPort);
-		layerPorts.add(yPort);
-		layerPorts.add(nPort);
-		layerPorts.add(bfStandIn);
-		layerPorts.add(gfStandIn);
-
-		add(layerPorts);
 
 		bgFadeOut = new FlxSprite(-100, -50).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
 		bgFadeOut.alpha = 0;
 		add(bgFadeOut);
 
-		boxName = new FlxSprite(140, 435);
-		boxName.loadGraphic(Paths.image('game/dokiUI/boxNames'), true, 153, 86);
-		boxName.animation.add('bf', [0], 0, false);
-		boxName.animation.add('gf', [1], 0, false);
-		boxName.animation.add('m', [2], 0, false);
-		boxName.animation.add('s', [3], 0, false);
-		boxName.animation.add('y', [4], 0, false);
-		boxName.animation.add('n', [5], 0, false);
-		boxName.animation.play("bf");
+		boxName = new Port('names');
+		boxName.x = 0;
+		boxName.y = 40;
 		boxName.alpha = 0;
+		boxName.screenCenter(X);
 		add(boxName);
-
-		// HEIGHT:153 WIDTH:86
 
 		add(box);
 
 		//box.animation.play('normalOpen');
 
 		box.screenCenter(X);
+		portraitLeft.screenCenter(X);
 
 		console = new FlxSprite().makeGraphic(480, 180, 0xFF000000);
 		console.alpha = 0.6;
 		console.visible = false;
 		add(console);
 
-		consoleText = new FlxTypeText(10, 10, 440, "", 16);
-		consoleText.setFormat(Paths.font("console.ttf"), 16, FlxColor.WHITE, LEFT);
+		consoleText = new FlxTypeText(10, 10, 440, "", 18);
+		consoleText.setFormat(Paths.font("console.ttf"), 18, FlxColor.WHITE, LEFT);
 		consoleText.visible = false;
 		add(consoleText);
 
@@ -402,17 +426,6 @@ class DialogueBox extends FlxSpriteGroup
 		end.alpha = 0;
 		add(end);
 
-		vignette = new FlxSprite(0, 0).loadGraphic(Paths.image('game/dokiUI/bg/vignette'));
-		vignette.setGraphicSize(Std.int(FlxG.width));
-		vignette.alpha = 0;
-		add(vignette);
-
-		//sounds = new FlxSound();
-		//music = new FlxSound();
-
-		//FlxG.sound.list.add(sounds);
-		//FlxG.sound.list.add(music);
-
 	}
 
 	var dialogueOpened:Bool = false;
@@ -436,6 +449,15 @@ class DialogueBox extends FlxSpriteGroup
 							yTest.stepSize = 1;
 						}
 				}
+			// HARD CODING CUZ IM STUPDI
+			if (PlayState.SONG.song.toLowerCase() == 'roses')
+				portraitLeft.visible = false;
+			if (PlayState.SONG.song.toLowerCase() == 'thorns')
+			{
+				portraitLeft.color = FlxColor.BLACK;
+				swagDialogue.color = FlxColor.WHITE;
+				dropText.color = FlxColor.BLACK;
+			}
 	
 			dropText.text = swagDialogue.text;
 
@@ -455,34 +477,6 @@ class DialogueBox extends FlxSpriteGroup
 				startDialogue();
 				dialogueStarted = true;
 			}
-
-			if (FlxG.keys.justPressed.SPACE && dialogueStarted == true && !inSkipDialogue)
-				{
-					if (skipCheck)
-						{
-							dialogueList = skipDialogueList;
-							inSkipDialogue = true;
-							startDialogue();
-						}
-					else
-						{
-							if (!canSkip && skipFastAndEatAss)
-								skipFastAndEatAss = false;
-							else if (canSkip)
-								skipFastAndEatAss = !skipFastAndEatAss;
-						}
-				}
-
-			if (skipFastAndEatAss && canSkip)
-				{
-					swagDialogue.completeCallback = resetDialogue;
-					textSpeed = 0.01;
-				}
-			else
-				{
-					swagDialogue.completeCallback = null;
-					textSpeed = 0.03;
-				}
 	
 			//if (FlxG.keys.justPressed.SPACE && dialogueStarted == true && canSkip && !skipFastAndEatAss)
 				//{
@@ -530,7 +524,7 @@ class DialogueBox extends FlxSpriteGroup
 					});
 				}*/
 
-			if ((FlxG.keys.justPressed.ENTER || skipFastAndEatAss) && dialogueStarted == true && canSkip)
+			if (FlxG.keys.justPressed.ENTER && dialogueStarted == true && canSkip)
 			{
 				remove(dialogue);
 				
@@ -541,9 +535,9 @@ class DialogueBox extends FlxSpriteGroup
 					{
 						isEnding = true;
 	
-						//if (PlayState.SONG.song.toLowerCase() == 'spiders' || PlayState.SONG.song.toLowerCase() == 'bottles' || PlayState.SONG.song.toLowerCase() == 'raccoon' || PlayState.SONG.song.toLowerCase() == 'goodbye')
-						FlxG.sound.music.fadeOut(2.2, 0);
-						canSkip = false;
+						if (PlayState.SONG.song.toLowerCase() == 'spiders' || PlayState.SONG.song.toLowerCase() == 'bottles' || PlayState.SONG.song.toLowerCase() == 'raccoon' || PlayState.SONG.song.toLowerCase() == 'goodbye')
+							FlxG.sound.music.fadeOut(2.2, 0);
+							canSkip = false;
 
 						new FlxTimer().start(0.5, function(tmr:FlxTimer)
 						{
@@ -581,12 +575,6 @@ class DialogueBox extends FlxSpriteGroup
 
 	var isEnding:Bool = false;
 
-	function resetDialogue()
-		{
-			dialogueList.remove(dialogueList[0]);
-			startDialogue();
-		}
-
 	public function startDialogue():Void
 	{
 		var skipDialogue = false;
@@ -595,14 +583,11 @@ class DialogueBox extends FlxSpriteGroup
 		// dialogue = theDialog;
 		// add(theDialog);
 
-
-		//Ok, let me pose a quick question, how is it that all other dialogue systems in fnf either get nowhere close to what I got here, or kinda do what I got here, but completely fail to condence it down and make it optimised?
-		//Like, I don't mean to flex on ya'll, but FIVE FIELDS to fill out, along with not having to have all the ports in different xml files. Tweening. That's what makes this swag.
-
+		//Listen, I know there are a lot of conditions and I could make it easyer on myself and make it more optimised, but I don't see you dialogue system doing the things this one can do, so sit down, and ignore the fact that there is way to much code.
 
 		// swagDialogue.text = ;
 		swagDialogue.resetText(dialogueList[0]);
-		swagDialogue.start(textSpeed, true);
+		swagDialogue.start(0.03, true);
 
 		callEffect = false;
 
@@ -610,27 +595,27 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'bf':
 				portThing = bfPort;
-				boxName.animation.play('bf');
+				boxName.playFrame('bf');
 				boxName.alpha = 1;
 			case 'gf':
 				portThing = gfPort;
-				boxName.animation.play('gf');
+				boxName.playFrame('gf');
 				boxName.alpha = 1;
 			case 'm':
 				portThing = mPort;
-				boxName.animation.play('m');
+				boxName.playFrame('m');
 				boxName.alpha = 1;
 			case 's':
 				portThing = sPort;
-				boxName.animation.play('s');
+				boxName.playFrame('s');
 				boxName.alpha = 1;
 			case 'y':
 				portThing = yPort;
-				boxName.animation.play('y');
+				boxName.playFrame('y');
 				boxName.alpha = 1;
 			case 'n':
 				portThing = nPort;
-				boxName.animation.play('n');
+				boxName.playFrame('n');
 				boxName.alpha = 1;
 			default:
 				callEffect = true;
@@ -680,33 +665,11 @@ class DialogueBox extends FlxSpriteGroup
 								FlxTween.tween(portThing, {y: portThing.y - 30}, 0.15, {ease: FlxEase.quadOut, type: ONESHOT});
 								FlxTween.tween(portThing, {y: 220}, 0.15, {ease: FlxEase.quadIn, type: ONESHOT, startDelay: 0.15});
 							}
-						if (effect == 'glitch')
-							{
-								var glitchEffect:FlxGlitchEffect = new FlxGlitchEffect(10, 2, 0.05, HORIZONTAL);
-								var glitchSprite:FlxEffectSprite = new FlxEffectSprite(portThing, [glitchEffect]);
-								glitchSprite.x = portThing.x;
-								glitchSprite.y = portThing.y;
-								if (curCharacter == 'gf')
-									{
-										add(glitchSprite);
-										new FlxTimer().start(0.5, function(tmr:FlxTimer)
-											{
-												remove(glitchSprite);
-											});
-									}
-								else
-									{
-										layerPorts.add(glitchSprite);
-										new FlxTimer().start(0.5, function(tmr:FlxTimer)
-											{
-												layerPorts.remove(glitchSprite);
-											});
-									}
-							}
 					}
 				if (dialogueList[0] == '')
 					{
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					}
 			}
 		else
@@ -715,38 +678,22 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					case 'playsound':
 						FlxG.sound.play(Paths.sound('dialogue/'+face), 1);
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					case 'playmusic':
-						musicPlaying = face;
-						musicTime = Std.parseFloat(chars);
 						FlxG.sound.music.loadEmbedded(Paths.music('dialogue/'+face));
-						FlxG.sound.music.looped = true;
-						if (chars != null)
-							FlxG.sound.music.loopTime = Std.parseFloat(chars);
 						FlxG.sound.music.play();
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					case 'musicfadeout':
 						if (FlxG.sound.music != null)
 							FlxG.sound.music.fadeOut(1, 0);
-						resetDialogue();
-					case 'muteall':
-						FlxG.sound.music.volume = 0;
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					case 'bg':
 						bg.loadGraphic(Paths.image('game/dokiUI/bg/'+face), false);
-						resetDialogue();
-					case 'edited':
-						swagDialogue.setFormat(Paths.font("edited.otf"), 32, FlxColor.WHITE, LEFT);
-						swagDialogue.borderColor = 0xFF000000;
-						swagDialogue.borderStyle = OUTLINE;
-						swagDialogue.borderSize = 5;
-						resetDialogue();
-					case 'normal':
-						swagDialogue.setFormat(Paths.font("doki.ttf"), 32, FlxColor.WHITE, LEFT);
-						swagDialogue.borderColor = 0xFF000000;
-						swagDialogue.borderStyle = OUTLINE;
-						swagDialogue.borderSize = 1.5;
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					case 'fade':
 						switch (face)
 						{
@@ -755,7 +702,8 @@ class DialogueBox extends FlxSpriteGroup
 								FlxTween.tween(bgTrans, {alpha: 0}, 1);
 								new FlxTimer().start((1.5), function(tmr:FlxTimer)
 									{
-										resetDialogue();
+										dialogueList.remove(dialogueList[0]);
+										startDialogue();
 										boxName.alpha = 1;
 										canSkip = true;
 									});
@@ -763,52 +711,33 @@ class DialogueBox extends FlxSpriteGroup
 								canSkip = false;
 								boxName.alpha = 0;
 								FlxTween.tween(bgTrans, {alpha: 1}, 1, {startDelay: 0.5,});
-								resetDialogue();
+								dialogueList.remove(dialogueList[0]);
+								startDialogue();
 						}
 					case 'fadesudden':
 						bgTrans.alpha = 1;
 						canSkip = false;
 						boxName.alpha = 0;
-						console.visible = false;
-						consoleText.visible = false;
-						resetDialogue();
-					case 'fadesuddenin':
-						bgTrans.alpha = 0;
-						canSkip = true;
-						boxName.alpha = 1;
-						console.visible = false;
-						consoleText.visible = false;
-						resetDialogue();
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
 					case 'wait':
-							{
-								canSkip = false;
-								boxName.alpha = 0;
-								new FlxTimer().start(Std.parseFloat(face), function(tmr:FlxTimer)
-									{
-										resetDialogue();
-										canSkip = true;
-										boxName.alpha = 1;
-									});
-							}
-					case 'monikaskipcheck':
-						skipFastAndEatAss = false;
-						skipCheck = true;
-						resetDialogue();
-					case 'console':
-						console.visible = true;
-						consoleText.visible = true;
-						boxName.alpha = 0;
 						canSkip = false;
-						new FlxTimer().start(1, function(tmr:FlxTimer)
+						boxName.alpha = 0;
+						new FlxTimer().start(Std.parseInt(face), function(tmr:FlxTimer)
 							{
-								consoleText.resetText(face);
-								consoleText.start(0.03, true);
-								resetDialogue();
+								dialogueList.remove(dialogueList[0]);
+								startDialogue();
+								canSkip = true;
+								boxName.alpha = 1;
 							});
-					case 'hideconsole':
-						console.visible = false;
-						consoleText.visible = false;
-						resetDialogue();
+					case 'crashthefumpinggame':
+						//#if FEATURE_FILESYSTEM
+						//Sys.exit(0);
+						//#else
+						//File.copy():"""
+						dialogueList.remove(dialogueList[0]);
+						startDialogue();
+						//#end
 					case 'start':
 					canSkip = false;
 					boxName.alpha = 0;
@@ -820,7 +749,8 @@ class DialogueBox extends FlxSpriteGroup
 						});
 					new FlxTimer().start(22, function(tmr:FlxTimer)
 						{
-							resetDialogue();
+							dialogueList.remove(dialogueList[0]);
+							startDialogue();
 							canSkip = true;
 							boxName.alpha = 1;
 							FlxG.sound.playMusic(Paths.music('dialogue/where_she_took_them'));
@@ -835,17 +765,22 @@ class DialogueBox extends FlxSpriteGroup
 						gfStandIn.visible = true;
 						bfStandIn.animation.play('oh damn', true);
 						gfStandIn.animation.play('oh damn', true);
-						resetDialogue();
 						new FlxTimer().start(1.2, function(tmr:FlxTimer)
 							{
 								FlxG.sound.music.stop();
 								FlxG.sound.play(Paths.sound('dialogue/gf_actualy_dies'), 1);
 							});
-						new FlxTimer().start(2, function(tmr:FlxTimer)
+						new FlxTimer().start(4.5, function(tmr:FlxTimer)
 							{
 								remove(bfStandIn);
 								remove(gfStandIn);
 							});
+						new FlxTimer().start(2.4, function(tmr:FlxTimer)
+							{
+								dialogueList.remove(dialogueList[0]);
+								startDialogue();
+							});
+
 						//headFallTest = true;
 						//gfPort.alpha = 0;
 						//gfPort.shown = false;
@@ -855,93 +790,33 @@ class DialogueBox extends FlxSpriteGroup
 						//add(xTest);
 						//add(yTest);
 						//add(flip);
-
-					case 'gfheadglitch':
-						resetDialogue();
-						new FlxTimer().start(0.6, function(tmr:FlxTimer)
-							{
-								canSkip = false;
-								FlxG.sound.music.stop();
-								FlxG.sound.music.loadEmbedded(Paths.sound('dialogue/gf_head_glitch'));
-								FlxG.sound.music.looped = true;
-								FlxG.sound.music.loopTime = 4618;
-								FlxG.sound.music.play();
-								gfPort.x = (1280 / (4 + 1)) * 3 - (gfPort.width / 2);
-								gfPort.flipX = true;
-								gfPort.alpha = 1;
-								gfPort.playFrame('G');
-								bfPort.playFrame('G');
-								vignette.alpha = 0.5;
-								new FlxTimer().start(0.75, function(tmr:FlxTimer)
-									{
-										canSkip = true;
-										gfPort.alpha = 0;
-										vignette.alpha = 0;
-										FlxG.sound.music.stop();
-										FlxG.sound.music.looped = true;
-										FlxG.sound.music.loopTime = musicTime;
-										FlxG.sound.music.loadEmbedded(Paths.music('dialogue/' + musicPlaying));
-										FlxG.sound.music.play();
-										resetDialogue();
-									});
-							});
-					case 'beginact2':
-						//Setin' up the stuff for the next act
-						FlxG.save.data.act2 = true;
-						FlxG.save.data.overallMisses = PlayStateChangeables.overallMisses;
-						FlxG.save.data.shitRatings = PlayStateChangeables.shitRatings;
-						if (PlayState.storyDifficulty == 2)
-							FlxG.save.data.act1OnHard = true;
-						var spSong:Int = FlxG.random.int(0, 2);
-						switch (spSong)
-							{
-								case 0:
-									FlxG.save.data.spSong = 'spiders';
-								case 1:
-									FlxG.save.data.spSong = 'bottles';
-								case 2:
-									FlxG.save.data.spSong = 'raccoon';
-							}
-						FlxTransitionableState.skipNextTransIn = true;
-						FlxTransitionableState.skipNextTransOut = true;
-						FlxG.switchState(new FuniError());
-					case 'screentear':
-						canSkip = false;
-						var glitchEffect:FlxGlitchEffect = new FlxGlitchEffect(10, 2, 0.05, HORIZONTAL);
-						var glitchSprite:FlxEffectSprite = new FlxEffectSprite(bg, [glitchEffect]);
-						layerBG.add(glitchSprite);
-							new FlxTimer().start(0.5, function(tmr:FlxTimer)
-								{
-									layerBG.remove(glitchSprite);
-									resetDialogue();
-									canSkip = true;
-								});
-					case 'fadeover':
-						FlxTween.tween(bgFadeOut, {alpha: 1}, 1);
-						resetDialogue();
-					case 'end':
-						canSkip = false;
-						FlxTween.tween(end, {alpha: 1}, 1);
-						new FlxTimer().start(3, function(tmr:FlxTimer)
-							{
-								FlxTween.tween(end, {alpha: 0}, 1);
-								new FlxTimer().start(3, function(tmr:FlxTimer)
-									{
-										finishThing();
-										kill();
-									});
-							});
-
-
+					//case 'screentear':
+						//var glitchEffect:FlxGlitchEffect = new FlxGlitchEffect(10, 2, 0.05, HORIZONTAL);
+						//var glitchSprite:FlxEffectSprite = new FlxEffectSprite(PlayState.doof, [glitchEffect]);
+					//case 'radfile':
+						//I litteraly hate you all. You know who you are and what you did to me.
+						//makeFuniFile(face);
+					//case 'rotate':
+						//FlxTween.tween(FlxG.camera.screen, {angle: 10}, 1);
+					//case 'resetcam':
+						//FlxG.camera.screen.angle = 0;
 				}
 			}
+		}
+	
+	public function makeFuniFile(fileName:String):Void
+		{
+			//First, we have to use limes Assets to get the txt version of the .png out of the embeded folder...
+			//Then we copy some random ass file from the non-embeded game directory so the game has a file to edit because haxe is dumb sometimes
+			File.copy('assets/shared/images/bad.png', 'assets/'+fileName+'.png');
+			//FINALY WE WRITE THE STING TO THE PNG FILE TO CHANGE IT TO WHAT WE WANT
+			File.saveContent('assets/'+fileName+'.png', Assets.getText('assets/embeded/images/'+fileName+'.txt'));
 		}
 
 	public function cleanDialog():Void
 	{
 		var splitName:Array<String> = dialogueList[0].split(":");
 		curCharacter = splitName[1];
-		//dialogueList[0] = StringTools.replace(dialogueList[0].substr(splitName[1].length + splitName[2].length + splitName[3].length + splitName[4].length + splitName[5].length + 6).trim(), '{Your IP address here}', Sys.environment()["USERNAME"]);
 		face = splitName[2];
 		chars = splitName[3];
 		pos = splitName[4];
