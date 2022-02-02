@@ -1,0 +1,154 @@
+:start:::::
+:bf:A:4:1:right:"Phew! That was a close one!"
+:gf:A:4:4:left:"..."
+:herheadfallsoff:::::
+:wait:1.9::::
+:fadesudden:::::
+:wait:3::::
+:fade:in::::
+:playmusic:where_she_took_them::::
+:bf:F:1:1:right:"Phew! That was a close one!
+:bf:::::"I barely got out of there with my cap."
+:bf:B::::"..."
+:bf:C::::"Hey... Where am I?"
+:bf::::left:"This isn't my place."
+:bf:B:::right:"Ugh, this is just great."
+:bf:::::"Well, I guess I should look around. Find out where I am."
+:musicfadeout:::::
+:fade:out::::
+:wait:2:::
+:bg:corridor:::
+:bf::::hideinstant:
+:fade:in:::
+:bf:B:1:1:right:"Wow, anyone hear a mic drop? It's dead silent around here."
+:bf:::::"..."
+:bf:D:::left:"Oh no, what if this school is closed?"
+:bf:B::::"Wait, no. I can hear voices. This must be after school hours."
+:bf:::::"I guess I should check them out."
+:bf::3:3::
+:playsound:knocknoc::::
+:wait:3::::
+:m:C:3:1::"Hello?"
+:bf:F::::"Hey!"
+:m:F::::"Huh?"
+:m:C::::"..."
+:bf:::::"Hello!"
+:m:B::::"Umm... Hello!"
+:m:D::::"Well, aren't you adorable!"
+:bf:F::::"Umm... Thanks!"
+:m:A::::
+:bf:B::::"I was wondering where I am."
+:bf:::::"I was trapped in a game."
+:m:C::::
+:bf:::::"And then I sang against some evil spirit."
+:bf:::::"And now I'm here."
+:m:C::::"..."
+:m:F::::"Would you mind stepping inside?"
+:bf:F::::"Sure...!"
+:musicfadeout:0.5::::
+:fade:out::::
+:wait:2:::
+:bg:club:::
+:bf::::hideinstant:
+:m::::hideinstant:
+:fade:in:::
+:playmusic:club:4618:::
+:s:B:3:2::"Who do you think could be knocking on our door?"
+:y:B:3:1::"I couldn't say, but I hope they're here to join."
+:n:E:3:3::"Yeah, we really need some new members."
+:n:C::::
+:s:C::::"Oh! Here they come!"
+:y::::hide:
+:s::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:m:F:3:1::"Ok. Tell me again, what happened?"
+:m::::hide:
+:n:B:5:1::"..."
+:y:C:6:2::"..."
+:s:B:6:3::"..."
+:bf::::hide:
+:m:E:3:3::"Oh! Umm... Sorry you three, this little fella came knocking on our door asking about where he is."
+:m::::hide:
+:y::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:s:B:3:1::"..."
+:s:C::::"Who... Who are you?"
+:s:C::::"You're so..."
+:s::::hide:
+:m:D:3:1::"Small?"
+:m::::hide:
+:y:F:3:1::"Peculiar?"
+:y::::hide:
+:s:D:3:1::"CUTE!"
+:s::::hide:
+:bf:F::::"Well, I'm BF!"
+:gfheadglitch:20::::
+:bf:F::::"And this is my gf, GFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+:bf:F::::"Well, I'm Boyfriend.xml, an up and coming rapper."
+:n:D:3:1::"Hey... wait a minute..."
+:n:G::::"You aren't THE BF, right?"
+:n:A::::
+:bf:F::::"Ha. Word gets around, huh?"
+:bf::::hide:
+:m:F:3:3::"Natsuki, you know this little character?"
+:m:C::::
+:n:D::::"And you don't?"
+:n:A::::"He is so popular right now!"
+:m::::hide:
+:y:B:4:3::"That name does sound... vaguely familiar..."
+:s:C:4:4::"Yeah... Isn't he like... a singer or something?"
+:n:A::::"Yeah!"
+:n:I::::"This is so cool!"
+:s::::hide:
+:y::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:m:F:3:1::"So... what happened to you again?"
+:m:C::::
+:bf:B::::"Well, I was at my place getting a nostalgia blast from a game on my old PS1."
+:bf:::::"While I was playing it, I... something..."
+:bf:::::"...Something happened. It was so fast I don't remember what."
+:bf:::::"I remember waking up inside the game, and there was some guy.
+:bf:::::"We sang, he exploded, then there was a ghost."
+:bf:::::"I managed to escape, and now I'm here. The only problem, I have no idea where here is."
+:m:F::::"Do you know what pushed you in?"
+:m:C::::
+:bf:::::"I wish I did, but I didn't have enough time to see."
+:bf:::::"Well, I guess I should get goin' now."
+:bf:F::::"Where's the exit?"
+:m:D::::"Oh, no need to worry about that!"
+:bf:C::::"Alri-... Wait, what?"
+:m::::hide:
+:bf:B::::
+:n:D:3:1::"Hey... BF? Before you go..."
+:n:H::::"Would..."
+:n:F::::"..."
+:n:E::::"Would it be alright if..."
+:n:H::::"If I sang a song with you?"
+:n:F::::
+:bf:B::::"Well, I just finished servin' up a batch of hot bars to that spirit character I was talking about and..."
+:n:B::::
+:muteall:::::
+:edited:::::
+:playsound:glitch::::
+:bf:F:::glitch:"You know what?"
+:n:F::::
+:bf:::::"I would be DELIGHTED to stay and sing a song or four!"
+:normal:::::
+:playmusic:club::::
+:n:A::::"Re-... Really?!"
+:n:H::::"I mean... O-Only if you want to!"
+:n:A::::
+:bf:F::::"Sure! Why not?"
+:bf::::hide:
+:n:C::::
+:s:E:3:3::"Yaay! Natsuki is going to sing for us!"
+:n:H::::"Hey! I-It's not like that!"
+:s::::hide:
+:n:C::::
+:bf:F:3:3::"Alright."
+:bf:F::::"Natsuki, is it?"
+:n:A::::"Yeah!"
+:bf:F::::"Ok, let's see what you got!"

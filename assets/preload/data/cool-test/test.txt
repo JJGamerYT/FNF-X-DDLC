@@ -1,0 +1,2 @@
+:m:A:r:This is test
+:console:flixel.load(PlayState.SONG = Raccoon);::

@@ -1,0 +1,18 @@
+:playmusic:ohio:4499:::
+:n:K:3:1::
+:m:B:3:3::"Wow Natsuki! I didn't know you could sing like that!"
+:m::::hide:
+:s:E:3:3::"Yeah! That was amazing!"
+:s::::hide:
+:y:A:3:3::"Phenomenal."
+:n:::::"..."
+:n:I::::"He He."
+:n:A:::"Yeah, I guess it was!"
+:n::::hide:
+:y::::hide:
+:bf:C:2:2:left:"..."
+:bf:::::(What the hell...?)
+:bf:F::::
+:s:A:2:1::"Hey! Do you think I could have a go? You two looked like you were having a lot of fun!"
+:bf:F::::"Sure! I got the time for it!"
+:s:E::::"Yaaay!"

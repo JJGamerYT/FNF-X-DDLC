@@ -1,0 +1,24 @@
+:playmusic:too_much_piano:10893:::
+:s:E:2:1::"Ehehe~ Thanks!"
+:bf:A:2:2:left:"Don't mention it."
+:bf:A::::"So... Who's next?"
+:s::::hide:
+:m:D:2:1::"Could I hav-"
+:m::::hide:
+:n:A:2:1::"Hey Yuri!"
+:bf::::hide:
+:y:B:2:2::"Hmm...?"
+:n:D::::"I was wondering if you'd wanna song with BF over here."
+:n:C::::
+:y:F::::"Oh, umm... I-I'm... not sure I'd be good at it..."
+:y:G::::
+:n::::hide:
+:s:E:2:1::"Come on Yuri! It'll be fun!"
+:s::::hide:
+:n:A:2:1::"Yeah!"
+:y:F::::"W-Well..."
+:n:C::::
+:y:F::::"Maybe..."
+:y:G::::"..."
+:n:A::::
+:y:B::::"Okay, I'll give it a try."

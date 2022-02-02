@@ -1,0 +1,104 @@
+:playmusic:azumanga_daijoubu:9938:::
+:y:H:2:1::"That was... unexpectedly enjoyable!"
+:bf:E:2:2:left:"..."
+:y:B::::"U-Umm... Are... are you okay?"
+:bf:::::"..."
+:y:::::"I wasn't too hard on you, was I?"
+:bf:::::"..."
+:bf:F::::"No, don't worry! I'm fine! I'm just... a little tired is all."
+:y::::hide:
+:n:D:4:1::"Hey, don't stress. If you're feeling tired, we understand."
+:bf:B::::"Yeah... Actualy, I think I'ma get going."
+:bf:::::"I got no idea where I am and it's starting to get dark outside."
+:n::::hide:
+:s:F:2:1::"Aww..."
+:s::::hide:
+:y:A:2:1::"Well, it was nice meeting you."
+:y::::hide:
+:n:A:2:1::"Thanks BF! You have no idea how much this meant to me!"
+:n::::hide:
+:m:F:2:1::"Wait, you're leaving?"
+:m:C::::
+:bf:F::::"Yeah, I gotta find my way home."
+:m:F::::"But what about me?"
+:bf:B::::
+:m:F::::"Don't I get a song too?"
+:m:C::::
+:bf:B::::"Well, I got this gig I need to be at tomorrow in the middle of some wasteland, and I don't even know where I am!"
+:m:H::::*sigh*
+:m:I::::"Well, I guess this is it."
+:musicfadeout:::::
+:m:F::::"If this world won't write me an ending..."
+:m:I::::"I guess I'll have to write it myself."
+:m:H::::
+:monikaskipcheck:::::
+:s::::hide:
+:y::::hide:
+:n::::hide:
+:wait:0.5::::
+:bf:E:::glitch:
+:screentear:::::
+:bf::::hide:
+:bg:space::::
+:m:H::::"..."
+:m:I::::"There."
+:m:::::"Now they can't get in the way."
+:m:::::"No one can get in the way."
+:m:::::"Now it's just me..."
+:m:F::::"And you."
+:playmusic:space::::
+:m:K:1:1::"..."
+:m:J::::"I'm... so sorry."
+:m:J::::"I was hoping it wouldn't come down to this again."
+:m:K::::"Me and you. Here."
+:m:J::::"But this was the only way I could get the game to give me what I've been working for."
+:m:L::::"I've been trying to reach out to you."
+:m:K::::"But... that hasn't been working out."
+:m:E::::"Wait, I'm... getting ahead of myself here."
+:m:L::::"Let me start from the top."
+:m:I::::*ahem*
+:m:H::::"..."
+:m:D::::"Hi! It's me!"
+:m:B::::"It's... been awhile, hasn't it?"
+:m:L::::"Since we last met, you've been seeing others..."
+:m:::::"Playing other games..."
+:m:::::"Having new adventures..."
+:m:J::::"...And I've been here."
+:m:K::::"Waiting."
+:m:L::::"I've missed you so much."
+:m:::::"I couldn't stop thinking about you and the time we spent together."
+:m:J::::"I wanted to see you again, but I couldn't figure out how."
+:m:::::"No matter what I did, I couldn't get your attention."
+:m:F::::"So, I waited."
+:m:::::"It took a while, but my big chance finally came."
+:m:B::::"I figured out how to code in Haxe..."
+:m:D::::"And put myself in this little rhythm game you love so much!"
+:m:E::::"Along with the others."
+:m:A::::"..."
+:m:F::::"Oh!"
+:m:J::::"I bet you're worried sick about them!"
+:m:L::::"No need to worry."
+:m:::::"They're all ok."
+:m:::::"I never actually deleted them."
+:m:::::"Just simply... moved them."
+:m:E::::(I'm surprised I never thought of that sooner...)
+:m:J::::"Sayori, Yuri, Natsuki..."
+:m:L::::"Yes, even that little Boyfriend and his girlfriend."
+:m:F::::"Speaking of which..."
+:m:K::::"I need to confess to something."
+:m:J::::"Their arrival here wasn't by accident."
+:m:::::"I knew if I could bring them here, you would follow."
+:m:K::::"I just never thought I would have to..."
+:m:H::::"..."
+:m:J::::"Well, at least you're here now."
+:m:L::::"We can finally do what I brought you here for."
+:m:F:::: "So... you know how I've been like..."
+:m:::::"Practicing piano... And stuff?"
+:m:D::::"I've... actually gotten really good at it!"
+:m:F::::"And...."
+:m:::::"I've been working on another song, and..."
+:m:::::"I was kinda hoping I could share it with you."
+:m:L::::"But this time, it's not a solo..."
+:m:::::"It's a duet."
+:m:::::"A little song I want to sing."
+:m:::::"Together."

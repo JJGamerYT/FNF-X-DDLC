@@ -1,0 +1,188 @@
+:start:::::
+:bf:A:4:1:right:"Phew! That was a close one!"
+:gf:A:4:4:left:"I was worried you wouldn't be able to take him down!"
+:bf:A::::"Heh, be it evil spirits, clowns, or ex-boyfriends, you know I always got your back babe!"
+:bf:B::::"..."
+:bf:C::::"Hey... Where are we?"
+:gf:C::::"What do you mean?"
+:bf:B::::"I mean this isn't your place."
+:gf:F::::"You're right. It looks like we're in a classroom."
+:bf:C::::"Why... Why are we in a classroom?"
+:gf:D::::"It must be my dad again."
+:bf:B::::*sigh* "He just doesn't give up, does he?"
+:gf:F::::"I wish he would just stop and let us date."
+:gf:B::::"So... What now?"
+:bf:A::::"I think it would be best if we looked around and figured out where we are."
+:gf:A::::"Good thinking."
+:musicfadeout:::::
+:fade:out::::
+:wait:2:::
+:bg:corridor:::
+:bf::::hideinstant:
+:gf::::hideinstant:
+:fade:in:::
+:gf:C:4:1:right:"Is this school closed? It doesn't seem like anyone is here."
+:bf:B:4:4:left:"I hope not. I wouldn't want to be trapped in here all night."
+:gf:F::::
+:bf:C::::"..."
+:bf:D::::"Hey, do you hear that?"
+:gf:E::::"Hear what?"
+:bf:A::::"I think I can hear people talking!"
+:gf:A::::"Oh! Where?"
+:bf:A::::"I think it's that door!"
+:bf:A::::"Let's give it a knock!"
+:gf:A::::"Ok!"
+:gf:A:4:3:left:
+:playsound:knocknoc::::
+:wait:3::::
+:m:C:3:1::"Hello?"
+:bf:A::::"Hey!"
+:m:F::::"Huh?"
+:m:C::::"..."
+:gf:A::::"Hello!"
+:m:B::::"Umm... Hello!"
+:m:D::::"Well, aren't you two adorable!"
+:bf:A::::"Umm... Thanks!"
+:m:A::::
+:gf:B::::"We were wondering were we are."
+:gf:F::::
+:bf:B::::"We were trapped in a game."
+:m:C::::
+:gf:B::::"And then he sang against an evil spirit."
+:gf:F::::
+:bf:B::::"And now we're here."
+:m:C::::"..."
+:m:F::::"Would you two mind stepping inside?"
+:gf:A::::
+:bf:A::::"Sure...!"
+:musicfadeout:0.5::::
+:fade:out::::
+:wait:2:::
+:bg:club:::
+:bf::::hideinstant:
+:gf::::hideinstant:
+:m::::hideinstant:
+:fade:in:::
+:playmusic:club:4618:::
+:s:B:3:2::"Who do you think could be knocking on our door?"
+:y:B:3:1::"I couldn't say, but I hope they're here to join."
+:n:E:3:3::"Yeah, we really need some new members."
+:n:C::::
+:s:C::::"Oh! Here they come!"
+:y::::hide:
+:s::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:gf:A:4:3:left:
+:m:F:3:1::"Ok. Tell me again, what happened?"
+:m::::hide:
+:n:B:5:1::"..."
+:y:C:6:2::"..."
+:s:B:6:3::"..."
+:bf::::hide:
+:gf::::hide:
+:m:E:3:3::"Oh! Umm... Sorry you three, these two came knocking on our door asking about where they are."
+:m::::hide:
+:y::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:gf:A:4:3:left:
+:s:B:3:1::"..."
+:s:C::::"Who... Who are you two?"
+:s:C::::"You're so..."
+:s::::hide:
+:m:D:3:1::"Small?"
+:m::::hide:
+:y:F:3:1::"Peculiar?"
+:y::::hide:
+:s:D:3:1::"CUTE!"
+:s::::hide:
+:bf:A::::"Well, I'm BF..."
+:bf:A::::"And this is my gf, GF!"
+:bf:B::::
+:gf:F::::
+:n:D:3:1::"Hey... wait a minute..."
+:n:G::::"You two aren't THE BF and GF, right?"
+:n:C::::
+:gf:A::::
+:n:A::::
+:bf:A::::"Ha. Word gets around, huh?"
+:bf::::hide:
+:gf::::hide:
+:m:F:3:3::"Natsuki, you know these two?"
+:m:C::::
+:n:D::::"And you don't?"
+:n:A::::"They are so popular right now!"
+:bf::::hide:
+:gf::::hide:
+:m::::hide:
+:y:B:4:3::"Those names do sound... vaguely familiar..."
+:s:C:4:4::"Yeah... Aren't they like... singers or something?"
+:n:A::::"Yeah!"
+:n:I::::"This is so cool!"
+:s::::hide:
+:y::::hide:
+:n::::hide:
+:bf:B:4:4:left:
+:gf:F:4:3:left:
+:m:F:3:1::"So... what happened to you two again?"
+:m:C::::
+:bf:B::::"Well, GF invited me over to her place. While I was there, we played an old video game she had."
+:bf:B::::"While we were playing it, her dad pushed us into the game."
+:gf:B::::"We escaped, and now we're here. We think my dad might of moved the game here while we were inside."
+:gf:F::::
+:m:C::::"..."
+:m:G::::"Ok. So... why did her dad push you into the game?"
+:m:C::::
+:gf:A::::
+:bf:A::::"He hates me dating her."
+:m:G::::"..."
+:m:G::::"How did he push you into the game?"
+:gf:A::::"My dad's a demon, so are me and my mom."
+:m:C::::"..."
+:m:G::::"..."
+:m:C::::"..."
+:m:D::::"...Ok then!"
+:m:A::::
+:bf:B::::"Well, I guess we should get goin' now."
+:m:C::::
+:gf:A::::"Where's the exit?"
+:gf:F::::
+:m:F::::"What?"
+:gf:B::::"Where can we find the exit?"
+:gf:F::::
+:m:D::::"The... exit?"
+:bf:C::::
+:m:E::::"Umm... Ahaha..."
+:m::::hide:
+:n:D:3:1::"Hey... BF? Before you go..."
+:n:H::::"Would..."
+:bf:B::::
+:n:F::::"..."
+:n:E::::"Would it be alright if..."
+:n:H::::"If I sang a song with you?"
+:n:F::::
+:bf:B::::"Well, I just finished servin' up a batch of hot bars to that spirit character I was talking about and-"
+:gf:B::::(Come on BF. If I was her, it would be a dream to get a song with you!)
+:gf:F::::
+:bf:B::::(Well, at least she's not trying to kill, separate, or force us to join their club, so I guess I can stick it out for a fan.)
+:n:D::::
+:bf:::::"You know, on second thought..."
+:n:G::::
+:gf:A::::
+:bf:A::::"I think I can stick around for a song or three."
+:n:A::::"Re-... Really?!"
+:n:H::::"I mean... O-Only if you want to!"
+:n:A::::
+:bf:A::::"Sure! Why not?"
+:bf::::hide:
+:gf::::hide:
+:n:C::::
+:s:E:3:3::"Yaay! Natsuki is going to sing for us!"
+:n:H::::"Hey! I-It's not like that!"
+:s::::hide:
+:n:C::::
+:bf:A:3:3::"Alright."
+:bf:A::::"Natsuki, is it?"
+:n:A::::"Yeah!"
+:bf:A::::"Ok, let's see what you got!"

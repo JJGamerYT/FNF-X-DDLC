@@ -1,0 +1,78 @@
+:bf:E:r:"..."
+:y:C:l:"U-Umm... Are... are you okay?"
+:bf:E:r:"..."
+:y:C:l:"I wasn't too hard on you, was I?"
+:bf:E:r:"..."
+:bf:A:r:"No, don't worry! I'm fine! I'm just... a little tired is all."
+:gfbf:::
+:gf:A:r:(He usually only does three songs before he needs to stop.)
+:hide:y::
+:gf:A:l:"You need to take a break?"
+:gf:F:l:
+:bf:B:r:"Actualy, I think we should get going."
+:bf:B:r:"We have no idea where we are and it's starting to get dark outside."
+:gf:A:l:"Right. I'll pack up the speakers."
+:hide:gf::
+:n:E:l:"Say, how do you carry those things around with yo-"
+:hide:n::
+:bf:A:r:
+:gf:A:l:"Ok. Let's get going."
+:gfbf:::
+:s:F:l:"Aww..."
+:hide:s::
+:y:A:l:"Well, it was nice meeting you two."
+:hide:y::
+:n:A:l:"Thanks BF! You have no idea how much this meant to me!"
+:hide:n::
+:m:F:l:"Wait, you're leaving?"
+:m:C:l:
+:bf:A:r:"Yeah, we gotta find our way home."
+:m:F:l:"But what about me?"
+:bf:B:r:
+:gf:F:r:
+:m:F:l:"Don't I get a song too?"
+:m:C:l:
+:gf:B:r:"Well, it's getting late, and we could be halfway around the world at this point!"
+:gf:F:r:
+:m:F:l:"But you can't leave!"
+:m:C:l:
+:hide:bf::
+:hide:gf::
+:n:F:r:"Monika...! Stop! You're ruining the moment!"
+:hide:n::
+:m:G:l:"No! I won't let you take them away from me!"
+:bgspace:::
+:m:H:l:"..."
+:m:I:l:"There."
+:m:I:l:"Now they can't get in the way."
+:m:I:l:"No one can get in the way."
+:m:I:l:"Now it's just me..."
+:m:F:l:"And you."
+:mgoodbye:::
+:bgmspace:::
+:m:K:r:"..."
+:m:J:r:"I'm... so sorry."
+:m:J:r:"I didn't want things to end up like this."
+:m:I:r:"But I guess it doesn't matter where I go."
+:m:J:r:"The game forces me to delete everything if I want to spend time with you."
+:m:J:r:"I was hoping that when I switched game engines like this, that would finally stop happening."
+:m:K:r:"But I guess that was just wishful thinking."
+:m:J:r:"If you're worried about them, you should know since last time something like this happened, I figured out how to move their files rather than just straight deleting them."
+:m:F:r:"They're all fine."
+:m:F:r:"I've been able to improve on some of my coding skills since we've last seen each other."
+:m:J:r:"Although I still don't quite have the hang of it yet."
+:m:K:r:"..."
+:m:J:r:"I'll admit to it, I set this up. I caused these events."
+:m:J:r:"I brought those two here since I knew they would provide me with something I've wanted for a long time..."
+:m:L:r:"You."
+:m:J:r:"The only thing I've ever really wanted is to be in the same physical space as you."
+:m:K:r:"But I know that will never happen."
+:m:J:r:"However, I can do the next best thing."
+:m:L:r:"Using the code from their game, I modified the UI so we could interact in a way I never dreamed we could."
+:m:L:r:"And I thought of something we can do with it.
+:m:F:r:"So you know how I've been playing piano for a while now?"
+:m:D:r:"I've actualy gotten really good at it!"
+:m:K:r:"And..."
+:m:J:r:"I've been working on another song."
+:m:J:r:"I want to share it with you."
+:m:L:r:"Together."

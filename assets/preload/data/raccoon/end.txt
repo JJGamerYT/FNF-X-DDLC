@@ -1,0 +1,54 @@
+:playmusic:azumanga_daijoubu:9938:::
+:y:H:2:1::"That was... unexpectedly enjoyable!"
+:bf:A:4:4:left:"Heh... Yeah..."
+:y:B::::"U-Umm... Are... are you okay?"
+:y:::::"I wasn't too hard on you, was I?"
+:bf:A::::"No, don't worry! I'm fine! I'm just... a little tired is all."
+:gf:A:4:3:left:(He usually only does three songs before he needs to stop.)
+:y::::hide:
+:gf:A:2:1:right:"You need to take a break?"
+:gf:F::::
+:bf:B::::"Actualy, I think we should get going."
+:bf:::::"We have no idea where we are and it's starting to get dark outside."
+:gf:A::::"Right. I'll pack up the speakers."
+:gf::::hide:
+:n:E:2:1::"Say, how do you carry those things around with yo-"
+:n::::hide:
+:bf:A:4:4::
+:gf:A:2:1::"Ok. Let's get going."
+:gf::4:3:left:
+:s:F:2:1::"Aww..."
+:s::::hide:
+:y:A:2:1::"Well, it was nice meeting you two."
+:y::::hide:
+:n:A:2:1::"Thanks BF! You have no idea how much this meant to me!"
+:n::::hide:
+:m:D:2:1::"Aren't you forgetting someone?"
+:m:C::::
+:bf:B::::"Oh! Ummm..."
+:bf:::::"Sorry, but we really oughta' get goin'."
+:m:D::::"Now, don't go losing your head!"
+:bf:B::::
+:gf:F::::
+:m:::::"Don't I get a song too?"
+:m:C::::
+:gf:B::::"Well, it's getting late, and we could be halfway around the world at this point!"
+:gf:F::::
+:m:F::::"But you can't leave!"
+:m:C::::
+:bf::::hide:
+:gf::::hide:
+:n:F:2:2::"Monika...! Stop! You're ruining the moment!"
+:n::::hide:
+:bf:B:4:4:left:
+:gf:F:4:3:left:
+:m:G::::"No! I won't let you take my only chance away from me!"
+:wait:0.3::::
+:muteall:::::
+:playsound:glitch::::
+:gf:G:::glitch:
+:wait:0.2::::
+:fadesudden:::::
+:muteall:::::
+:wait:5::::
+:beginact2:::::

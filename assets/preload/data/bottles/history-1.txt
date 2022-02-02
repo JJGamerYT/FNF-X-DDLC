@@ -1,0 +1,17 @@
+:playmusic:ohio:4499:::
+:n:A:3:1::
+:m:B:3:3::"Wow Natsuki! I didn't know you could sing like that!"
+:m::::hide:
+:s:E:3:3::"Yeah! That was amazing!"
+:s::::hide:
+:y:A:3:3::"Phenomenal."
+:n:I::::"He He."
+:n:A:::"Yeah, I guess it was!"
+:n::::hide:
+:y::::hide:
+:bf:A:2:2:left:"Hey GF, did you see Natsuki? I did't expect her to be so good at this!"
+:gf:A:2:1:right:"Yeah! She was really good!"
+:gf::::hide:
+:s:A:2:1::"Hey! Do you think I could have a go? You two looked like you were having a lot of fun!"
+:bf:A::::"Sure! I got the time for it!"
+:s:E::::"Yaaay!"

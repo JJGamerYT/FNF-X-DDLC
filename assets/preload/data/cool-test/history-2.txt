@@ -1,0 +1,6 @@
+:bf:A:1:1::pos 11
+:bf:A:2:1::pos 21
+:bf:A:2:2::pos 22
+:bf:A:3:1::pos 31
+:bf:A:3:2::pos 32
+:bf:A:3:3::pos 33

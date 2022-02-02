@@ -1,0 +1,40 @@
+:playmusic:too_much_piano:10893:::
+:s:E:2:1::"Ehehe~ Thanks!"
+:bf:F:2:2:left:"Don't mention it."
+:bf:A::::"So... Who's next?"
+:s::::hide:
+:m:D:2:1::"Could I hav-"
+:m::::hide:
+:n:A:2:1::"Hey Yuri!"
+:bf::::hide:
+:n:C::::
+:y:I:2:2::"..."
+:n:D::::"...Yuri?"
+:n:B::::
+:y:J::::"..."
+:y:D::::
+:n:J::::"HEY YURI!"
+:n:B::::
+:y:C::::"Ahh!"
+:y:E::::"Natsuki! You almost scared me half to death!"
+:y:::::"I could of hurt myself!"
+:n:E::::"Geez, sorry. I just couldn't get your attention."
+:n:::::"What was that important that you wouldn't even look at me?"
+:y:F::::
+:n:::::"Not even books hold your attention that much."
+:y:K::::"Don't... D-Don't worry about that."
+:y:B::::"So... What is it Natsuki?"
+:n:D::::"I was wondering if you'd wanna song with BF over here."
+:n:C::::
+:y:F::::"Oh, umm... I-I'm... not sure I'd be good at it..."
+:y:G::::
+:n::::hide:
+:s:E:2:1::"Come on Yuri! It'll be fun!"
+:s::::hide:
+:n:A:2:1::"Yeah!"
+:y:F::::"W-Well..."
+:n:C::::
+:y:F::::"Maybe..."
+:y:G::::"..."
+:n:A::::
+:y:B::::"Okay, I'll give it a try."

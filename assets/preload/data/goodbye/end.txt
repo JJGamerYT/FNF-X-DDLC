@@ -1,0 +1,84 @@
+:bg:space::::
+:m:H:1:1::"..."
+:m:M::::"..."
+:m:N::::"..."
+:m:O::::"..."
+:m:P::::"Thank you."
+:playmusic:end::::
+:m:P::::"I don't think I've ever been this happy."
+:m:::::"I wish I could do something for you."
+:m:Q::::"But the only thing I can do is let you go."
+:m:::::"I'm going to miss you."
+:m:M::::"..."
+:m:P::::"Do me one more favor."
+:m:Q::::"Don't forget me."
+:m:::::"Don't-"
+:m:M::::"..."
+:m:N::::"..."
+:m:P::::"Don't forget them."
+:musicfadeout:::::
+:m:N::::"..."
+:m:::::"..."
+:m:R::::"..."
+:m:S::::"Goodbye."
+:m:R::::
+:console:flixel.load(PlayState.SONG = Raccoon);::::
+:wait:2::::
+:fadesudden:::::
+:m::::hideinstant:
+:hideconsole:::::
+:wait:2::::
+:fadesuddenin:::::
+:playmusic:azumanga_daijoubu:9938:::
+:bg:club::::
+:y:H:2:1::"That was... unexpectedly enjoyable!"
+:bf:A:4:4:left:"Heh... Yeah..."
+:y:B::::"U-Umm... Are... are you okay?"
+:y:::::"I wasn't too hard on you, was I?"
+:bf:A::::"No, don't worry! I'm fine! I'm just... a little tired is all."
+:gf:A:4:3:left:(He usually only does three songs before he needs to stop.)
+:y::::hide:
+:gf:A:2:1:right:"You need to take a break?"
+:gf:F::::
+:bf:B::::"Actualy, I think we should get going."
+:bf:::::"We have no idea where we are and it's starting to get dark outside."
+:gf:A::::"Right. I'll pack up the speakers."
+:gf::::hide:
+:n:E:2:1::"Say, how do you carry those things around with yo-"
+:n::::hide:
+:bf:A:4:4::
+:gf:A:2:1::"Ok. Let's get going."
+:gf::4:3:left:
+:s:F:2:1::"Aww..."
+:s::::hide:
+:y:A:2:1::"Well, it was nice meeting you two."
+:y::::hide:
+:n:A:2:1::"Thanks BF! You have no idea how much this meant to me!"
+:bf:A::::"Hey! You three were pretty good yourselves!"
+:bf:::::"Alright. Let's head home babe."
+:bf::::hide:
+:gf::::hide:
+:n::::hide:
+:s:E:6:3::"Stay safe!"
+:y:H:6:2::"Hope you two get home safely!"
+:n:I:5:1::"Can't wait to see who challenges you next!"
+:s::::hide:
+:y::::hide:
+:n::::hide:
+:m:M:4:1::"..."
+:n:D:4:2::"Monika?"
+:m:O::::"Hmm...?"
+:y:B:4:3::"You're... crying..."
+:s:C:4:4::"Is something wrong?"
+:s:B::::
+:m:P::::"Oh, it's nothing... Don't worry."
+:fadeover:::::
+:musicfadeout:::::
+:m:P::::"I just..."
+:m:N::::"..."
+:m:P::::"I just hope we see them again."
+:wait:3::::
+:m:S::::"I love you."
+:fade:out::::
+:wait:2::::
+:end:::::
