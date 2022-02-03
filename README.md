@@ -14,23 +14,26 @@ It's got all you could want!
 Join the club! We could use a new member.
 
 ## Credits
-- [JJGamer](YT) - Artist
-- [JJGamer](TW) - Musician
-- [JJGamer](DIS SERV) - Coder
-- [JJGamer](???) - Everything else in this little mod
+- [JJGamer](https://www.youtube.com/c/JJGamer_Internet_Idiot) - Artist
+- [JJGamer](https://twitter.com/JJGOnlineIdiot) - Musician
+- [JJGamer](https://discord.gg/Yqp9Xtfa3K) - Coder
+- [JJGamer](https://gamebanana.com/mods/305555) - Everything else in this little mod
 
 (In short, I, JJGamer, made everything. **EVER.**)
 
 ## Special thanks
-- [SkyMewtwo64]() - Beta tester
-- [TheBoyLegendary]() - Beta tester
-- [Yogi Leaf]() - Beta tester (also made some swag remixes of the songs in this mod)
-- [Cyanide FS]() - Unknowingly helped me get the dokis vocals
-- [Dan Salvato]() - The one, the only. If you don't know what he did I don't even know why you're here.
+- [SkyMewtwo64](https://www.youtube.com/channel/UCnseLr1Ytq5cCFrGXuie2cQ) - Beta tester
+- [Yogi Leaf](https://www.youtube.com/channel/UCdXUQfYNNY0PkZf1zyiJmVg) - Beta tester (also made some swag remixes of the songs in this mod)
+- [Cyanide FS](https://www.youtube.com/c/CyanideFS) - Unknowingly helped me get the dokis vocals
+- [Dan Salvato](https://mobile.twitter.com/dansalvato?lang=en) - The one, the only. If you don't know what he did I don't even know why you're here.
 
 ---
 
 Now, enough with the thank you's. Let's get to business.
+
+## Permisions
+go crazy bro
+(what ninjamuffin said)
 
 ## Modding
 If you're thinking of modding the game (Which you likely are if you're here.), there are a few things you'll need to know before starting.
