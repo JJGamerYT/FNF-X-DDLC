@@ -13,6 +13,13 @@ It's got all you could want!
 
 Join the club! We could use a new member.
 
+## FOR THOSE PLANING TO COMPILE THIS MOD FOR WEB
+The files in the mod are **NOT YET SETUP FOR WEB.**
+
+There are no mp3 files alts for the ogg files along with the need for the mod to be closed by the player to progress, therefore it will not play corectly online.
+
+If you want to do the work of adding the mp3 files yourself and making a fix for the game reset, go ahead. Otherwise, standby for a premade web version.
+
 ## Credits
 - [JJGamer](https://www.youtube.com/c/JJGamer_Internet_Idiot) - Artist
 - [JJGamer](https://twitter.com/JJGOnlineIdiot) - Musician
